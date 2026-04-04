@@ -21,6 +21,14 @@ claude plugin install devtools-setup@musabkara-claude-marketplace
 | `/download-secrets` | Download secrets from private GitHub repo |
 | `/admin-login` | GitHub authentication and account management |
 
+## Environment Tweaks
+
+The installer sets these automatically via `install.sh`:
+
+| Variable | Effect |
+|----------|--------|
+| `CLAUDE_CODE_NO_FLICKER=1` | Fixes terminal flickering, enables mouse support. Experimental renderer — smoother UI as chat grows. Trade-off: no Cmd+F, different copy-paste behavior |
+
 ## Auto-Trigger
 
 The `devtools-setup` skill activates when you mention: install, setup, migration, bind, config, mcp, secrets, or admin login. It routes to the correct command automatically.
