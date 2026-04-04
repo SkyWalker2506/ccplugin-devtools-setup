@@ -1,11 +1,13 @@
 # devtools-setup — Claude Code Plugin
 
+by [Musab Kara](https://linkedin.com/in/musab-kara-85580612a) · [GitHub](https://github.com/SkyWalker2506)
+
 Setup, configuration, and admin tools for claude-config. Handles installation, CLAUDE.md binding, project migration, MCP server management, secrets download, and GitHub auth.
 
 ## Install
 
 ```bash
-claude plugin install SkyWalker2506/ccplugin-devtools-setup
+claude plugin install devtools-setup@musabkara-claude-marketplace
 ```
 
 ## Commands
@@ -35,4 +37,5 @@ Responds to migration hook signals (`INSTALL_NEEDED`, `MIGRATION_NEEDED`, `SECRE
 
 ## Part of
 
-[SkyWalker2506/claude-config](https://github.com/SkyWalker2506/claude-config) — Multi-Agent OS for Claude Code
+- [claude-config](https://github.com/SkyWalker2506/claude-config) — Multi-Agent OS for Claude Code (110 agents, local-first routing)
+- [Plugin Marketplace](https://github.com/SkyWalker2506/claude-marketplace) — Browse & install all 14 plugins

@@ -3,7 +3,7 @@
   "description": "Setup, configuration, and admin tools for claude-config. Handles installation, CLAUDE.md binding, project migration, MCP server management, secrets download, and GitHub auth.",
   "version": "1.0.0",
   "author": {
-    "name": "SkyWalker2506",
+    "name": "Musab Kara",
     "url": "https://github.com/SkyWalker2506"
   },
   "homepage": "https://github.com/SkyWalker2506/ccplugin-devtools-setup",
