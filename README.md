@@ -7,6 +7,12 @@ Setup, configuration, and admin tools for claude-config. Handles installation, C
 ## Install
 
 ```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/SkyWalker2506/claude-marketplace/main/install.sh) devtools-setup
+```
+
+Or via Claude Code native marketplace:
+
+```bash
 claude plugin install devtools-setup@musabkara-claude-marketplace
 ```
 
