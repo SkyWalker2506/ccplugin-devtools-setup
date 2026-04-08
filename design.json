@@ -1,0 +1,48 @@
+{
+  "cds_version": "1.0",
+  "name": "ccplugin-devtools-setup",
+  "type": "plugin",
+  "input_patterns": [
+    {
+      "type": "auto_trigger",
+      "keywords": [
+        "setup",
+        "install",
+        "migration",
+        "devtools"
+      ],
+      "confirm": true,
+      "cooldown": 0
+    },
+    {
+      "type": "slash_command",
+      "commands": [
+        "/setup-devtools"
+      ]
+    }
+  ],
+  "output_patterns": [
+    {
+      "type": "terminal_text",
+      "max_lines": 20
+    },
+    {
+      "type": "file_generation",
+      "path": ".claude/ config files, secrets.env"
+    }
+  ],
+  "lifecycle": {
+    "preflight": {
+      "required_tools": [
+        "git",
+        "bash"
+      ],
+      "required_secrets": [],
+      "required_mcp": []
+    }
+  },
+  "error_handling": {
+    "retry_network": false,
+    "max_retries": 0
+  }
+}
