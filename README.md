@@ -26,6 +26,7 @@ claude plugin install devtools-setup@musabkara-claude-marketplace
 | `/add-mcp` | Add optional MCP servers (Flutter, Firebase, Unity) |
 | `/download-secrets` | Download secrets from private GitHub repo |
 | `/admin-login` | GitHub authentication and account management |
+| `/status` | Check all devtools dependencies (gh, claude-config, secrets) |
 
 ## Environment Tweaks
 

@@ -49,3 +49,4 @@ This skill also responds to migration hook signals:
 | `MIGRATION_UPDATE` | Run `/migration` with delta apply |
 | `SECRETS_MISSING` | Run `/download-secrets` |
 | `BIND_NEEDED` | Run `/bind` |
+| Status | status check, devtools status, check dependencies, is gh installed | `/status` |
