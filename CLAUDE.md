@@ -1,15 +1,38 @@
-# ccplugin-devtools-setup — Yönlendirici
+# ccplugin-devtools-setup
 
-> **Bu dosya sadece yönlendiricidir.** Tüm kurallar `~/Projects/claude-config/CLAUDE.md` dosyasındadır.
+> See global rules: `~/Projects/claude-config/CLAUDE.md`
 
----
+## Project
 
-## Her oturum başında
+Setup, configuration, and admin tools plugin for claude-config.
 
-1. **`~/Projects/claude-config/CLAUDE.md` dosyasını oku** ve talimatlarını uygula
-2. Yanıt başında model etiketi: `(Model Adı)`
-3. Dil: kullanıcıya Türkçe; kod/commit İngilizce
+**Repo:** https://github.com/SkyWalker2506/ccplugin-devtools-setup  
+**Version:** 1.1.0
 
-## Değişiklik
+## Commands
 
-Proje kurallarını değiştirmek için `~/Projects/claude-config/` reposunda düzenle → `./install.sh` çalıştır.
+| Command | Description |
+|---------|-------------|
+| `/install` | Run claude-config installer with interactive setup |
+| `/bind` | Link CLAUDE.md files to claude-config as redirectors |
+| `/migration` | Project health check, version validation, MCP status |
+| `/add-mcp` | Add optional MCP servers (Flutter, Firebase, Unity) |
+| `/download-secrets` | Download secrets from private GitHub repo |
+| `/admin-login` | GitHub authentication and account management |
+
+## Key Files
+
+- `commands/*.md` — 6 command definitions with YAML frontmatter
+- `skills/devtools-setup/SKILL.md` — auto-trigger skill with intent routing
+- `.claude-plugin/plugin.json` — plugin metadata
+- `install.sh` — copies plugin files to ~/.claude/plugins/devtools-setup/
+
+## Dependencies
+
+- `gh` CLI (GitHub CLI) — required for admin-login, download-secrets
+- `~/Projects/claude-config/` — required for install, bind
+- `~/Projects/MIGRATION_VERSION` — managed by claude-config hooks
+
+## Auto-Trigger
+
+Fires when user mentions: install, setup, migration, bind, config, mcp, secrets, admin login, health check, project setup.

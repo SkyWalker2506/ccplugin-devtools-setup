@@ -1,7 +1,7 @@
 {
   "name": "devtools-setup",
   "description": "Setup, configuration, and admin tools for claude-config. Handles installation, CLAUDE.md binding, project migration, MCP server management, secrets download, and GitHub auth.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": {
     "name": "Musab Kara",
     "url": "https://github.com/SkyWalker2506"
@@ -17,7 +17,8 @@
     {"name": "migration", "path": "commands/migration.md"},
     {"name": "add-mcp", "path": "commands/add-mcp.md"},
     {"name": "download-secrets", "path": "commands/download-secrets.md"},
-    {"name": "admin-login", "path": "commands/admin-login.md"}
+    {"name": "admin-login", "path": "commands/admin-login.md"},
+    {"name": "status", "path": "commands/status.md"}
   ],
   "skills": [
     {"name": "devtools-setup", "path": "skills/devtools-setup/SKILL.md"}
