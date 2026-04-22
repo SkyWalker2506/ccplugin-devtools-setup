@@ -25,5 +25,7 @@ if [ "$SCRIPT_DIR" != "$INSTALL_DIR" ]; then
 fi
 
 echo ""
-echo "✅ ccplugin-devtools-setup installed at $INSTALL_DIR"
-echo "Commands: /install, /bind, /migration, /add-mcp, /download-secrets, /admin-login"
+echo "✅ ccplugin-devtools-setup v1.2.0 installed at $INSTALL_DIR"
+echo "Commands: /install, /bind, /migration, /add-mcp, /download-secrets, /admin-login, /status"
+echo ""
+echo "Run /status to check your dependencies."
