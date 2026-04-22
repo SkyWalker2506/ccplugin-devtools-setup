@@ -54,3 +54,38 @@ Responds to migration hook signals (`INSTALL_NEEDED`, `MIGRATION_NEEDED`, `SECRE
 - [claude-config](https://github.com/SkyWalker2506/claude-config) — Multi-Agent OS for Claude Code (134 agents, local-first routing)
 - [Plugin Marketplace](https://github.com/SkyWalker2506/claude-marketplace) — Browse & install all 18 plugins
 - [ClaudeHQ](https://github.com/SkyWalker2506/ClaudeHQ) — Claude ecosystem HQ
+
+## Auto-Trigger Examples
+
+The `devtools-setup` skill fires automatically when your message contains setup/config keywords:
+
+| You say | Claude runs |
+|---------|------------|
+| "install claude-config" | `/install` |
+| "bind my CLAUDE.md files" | `/bind` |
+| "run migration check" | `/migration` |
+| "add flutter MCP" | `/add-mcp flutter` |
+| "download my secrets" | `/download-secrets` |
+| "login to github" | `/admin-login` |
+
+## Signal Handling
+
+The skill also responds to signals emitted by migration hooks:
+
+| Signal | Action |
+|--------|--------|
+| `INSTALL_NEEDED` | Run `/install` |
+| `MCP_SETUP_NEEDED` | Run `/install` |
+| `MIGRATION_NEEDED` | Run `/migration` |
+| `MIGRATION_UPDATE` | Run `/migration` with delta apply |
+| `SECRETS_MISSING` | Run `/download-secrets` |
+| `BIND_NEEDED` | Run `/bind` |
+
+Signals are set in `~/Projects/MIGRATION_VERSION` by claude-config hooks.
+
+## Changelog
+
+### v1.1.0 — 2026-04-22
+- Added `commands` and `skills` arrays to `plugin.json`
+- Created `install.sh` for automated deployment
+- Added `.gitignore`
