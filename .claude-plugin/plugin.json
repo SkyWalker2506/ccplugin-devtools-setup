@@ -10,5 +10,16 @@
   "repository": "https://github.com/SkyWalker2506/ccplugin-devtools-setup",
   "license": "MIT",
   "category": "productivity",
-  "keywords": ["install", "setup", "migration", "mcp", "config", "secrets", "admin"]
+  "keywords": ["install", "setup", "migration", "mcp", "config", "secrets", "admin"],
+  "commands": [
+    {"name": "install", "path": "commands/install.md"},
+    {"name": "bind", "path": "commands/bind.md"},
+    {"name": "migration", "path": "commands/migration.md"},
+    {"name": "add-mcp", "path": "commands/add-mcp.md"},
+    {"name": "download-secrets", "path": "commands/download-secrets.md"},
+    {"name": "admin-login", "path": "commands/admin-login.md"}
+  ],
+  "skills": [
+    {"name": "devtools-setup", "path": "skills/devtools-setup/SKILL.md"}
+  ]
 }
