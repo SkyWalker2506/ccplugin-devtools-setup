@@ -50,3 +50,4 @@ This skill also responds to migration hook signals:
 | `SECRETS_MISSING` | Run `/download-secrets` |
 | `BIND_NEEDED` | Run `/bind` |
 | Status | status check, devtools status, check dependencies, is gh installed | `/status` |
+| Doctor | doctor, full diagnostic, comprehensive check, deep health check | `/doctor` |

@@ -27,6 +27,7 @@ claude plugin install devtools-setup@musabkara-claude-marketplace
 | `/download-secrets` | Download secrets from private GitHub repo |
 | `/admin-login` | GitHub authentication and account management |
 | `/status` | Check all devtools dependencies (gh, claude-config, secrets) |
+| `/doctor` | Comprehensive 4-phase environment diagnostic with MCP health check |
 
 ## Environment Tweaks
 
