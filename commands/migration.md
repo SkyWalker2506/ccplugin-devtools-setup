@@ -57,3 +57,11 @@ Output structured report with: version status, MCP status table, file status tab
 ## Arguments
 
 `$ARGUMENTS` may be: `health`, `setup`, or `fix`. Default: full check.
+
+## Path Dependencies
+
+This command reads from `~/Projects/MIGRATION_VERSION` (master version) and `.claude/migration_version` (project version). These files are managed by `~/Projects/claude-config/`. If the path differs on your system, check `~/Projects/claude-config/scripts/` for the migration hook scripts.
+
+## Timeout
+
+**CRITICAL:** This command must complete within 2 minutes. On timeout, report current state and stop.
